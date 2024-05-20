@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'Floki';
-    src: url('{{Floki-Bold.woff2 | asset_url }}') format('woff2'),
-        url('{{Floki-Bold.woff | asset_url }}') format('woff');
+    src: url("https://cdn.shopify.com/s/files/1/0596/1898/4089/files/Floki-Bold.woff?v=1716232914") format('woff'),
+        url("https://cdn.shopify.com/s/files/1/0596/1898/4089/files/Floki-Bold.woff2?v=1716232914") format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
