@@ -2,3 +2,15 @@
     display: none;
 }
 
+@font-face {
+    font-family: 'Floki';
+    src: url('./Floki-Bold.woff2') format('woff2'),
+        url('./Floki-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body, h1, h2, h3 {
+  font-family : 'Floki'!important;
+}
