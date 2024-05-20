@@ -46,10 +46,14 @@ p.announcement-bar__message.h5 {
   background-color: #FD4C22;
     text-align: center;
 }
+.announcement-bar-slider .slider{
+  width: 84%!important;
+}
 p.fresh-nounce{
     color: #fff;
       padding: 10px;
-    margin: 0;
+      margin: 0;
+  font-size: 14px;
 }
 .list-menu__item{
       text-transform: uppercase;
