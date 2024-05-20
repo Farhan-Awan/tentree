@@ -38,3 +38,6 @@ h2, h3 {
   background-color: #FD4C22;
     padding: 20px;
 }
+p.announcement-bar__message.h5 {
+    color: #fff;
+}
