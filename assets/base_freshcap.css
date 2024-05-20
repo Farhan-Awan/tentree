@@ -4,14 +4,6 @@
 
 @font-face {
     font-family: 'Floki';
-    src: url('./Floki-Bold.woff2') format('woff2'),
-        url('./Floki-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Floki';
     src: url('{{Floki-Bold | asset_url }}') format('woff2'),
         url('{{Floki-Bold | asset_url }}') format('woff');
     font-weight: bold;
