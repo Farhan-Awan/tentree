@@ -135,44 +135,29 @@
        <p><b>Discover Your Perfect Pair</b> Try our Style Quiz to find the best pair for you. <a href="#" class="gray-link-bird">Take the Style Quiz</a>
        </p>
       </div>
- <script> 
+
+  <div class="myslick-slide-wrapper">
+    <div class="myprojectx" id="tricksil">
+     <div class="colx">Farhan working slide 1</div>
+     
+      <div class="colx">Farhan working slide 2</div>
+      
+      <div class="colx">Farhan working slide 3</div>
+      <div class="colx">Farhan working slide 4</div>
+      <div class="colx">Farhan working slide 5</div>
+      <div class="colx">Farhan working slide 6</div>
+      <div class="colx">Farhan working slide 7</div>
+      
+      </div>
+    </div>
+<script>
   $(document).ready(function(){
-    $('.bird-land-slidee').slick({
-    vertical: true,
-     dots: true,
-       arrows: false,
-    slidesToScroll: 1,
-    slidesToShow: 1,
-      responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-        }
-      }
-    ]
-  })
-});   
-		</script>
-
-
+          $('#tricksil').slick({
+       
+      });
+	
+  });
+</script>
 {% schema %}
   {
     "name": "slider-banner-top",
