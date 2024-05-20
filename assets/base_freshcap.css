@@ -10,7 +10,15 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Floki';
+    src: url('{{Floki-Bold | asset_url }}') format('woff2'),
+        url('{{Floki-Bold | asset_url }}') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
-body, h1, h2, h3 {
+h1, h2, h3 {
   font-family : 'Floki'!important;
 }
