@@ -1,42 +1,54 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "slider_banner_top_bX6fVa": {
+      "type": "slider-banner-top",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "image_ApCBir": {
+          "type": "image",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "slide_img": "shopify:\/\/shop_images\/Frame_40972.png",
+            "text0": "Give customers details about the banner image(s) or content on the template.",
+            "text1": "Give customers details about the banner image(s) or content on the template.",
+            "btn_start": ""
           }
         },
-        "button": {
-          "type": "buttons",
+        "image_XR8ce4": {
+          "type": "image",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "slide_img": "shopify:\/\/shop_images\/Frame_40967.png",
+            "text0": "Give customers details about the banner image(s) or content on the template.",
+            "text1": "Give customers details about the banner image(s) or content on the template.",
+            "btn_start": ""
+          }
+        },
+        "image_B9D6we": {
+          "type": "image",
+          "settings": {
+            "slide_img": "shopify:\/\/shop_images\/Frame_40972.png",
+            "text0": "Give customers details about the banner image(s) or content on the template.",
+            "text1": "Give customers details about the banner image(s) or content on the template.",
+            "btn_start": ""
+          }
+        },
+        "image_EbCNbj": {
+          "type": "image",
+          "settings": {
+            "slide_img": "shopify:\/\/shop_images\/Frame_40973.png",
+            "text0": "Give customers details about the banner image(s) or content on the template.",
+            "text1": "Give customers details about the banner image(s) or content on the template.",
+            "btn_start": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "image_ApCBir",
+        "image_XR8ce4",
+        "image_B9D6we",
+        "image_EbCNbj"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "sec_heading": "",
+        "color_scheme1": "accent-1"
       }
     },
     "featured_collection": {
@@ -69,7 +81,7 @@
     }
   },
   "order": [
-    "image_banner",
+    "slider_banner_top_bX6fVa",
     "featured_collection"
   ]
 }
