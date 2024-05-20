@@ -11,9 +11,24 @@
     font-display: swap;
 }
 
-h1, h2, h3 {
+h1 {
   font-family : 'Floki'!important;
   text-transform: uppercase;
         font-size: 96px !important;
     line-height: 80% !important;
+}
+h2, h3 {
+  font-family : 'Floki'!important;
+  text-transform: uppercase;
+        font-size: 96px !important;
+    line-height: 80% !important;
+}
+
+@font-face {
+    font-family: 'Moderat';
+    src: url("https://cdn.shopify.com/s/files/1/0596/1898/4089/files/Moderat-Mono-Light.woff?v=1716232914") format('woff'),
+        url("https://cdn.shopify.com/s/files/1/0596/1898/4089/files/Moderat-Mono-Light.woff2?v=1716232914") format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
