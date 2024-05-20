@@ -32,3 +32,9 @@ h2, h3 {
     font-style: normal;
     font-display: swap;
 }
+
+
+.announcement-freshcap{
+  background-color: #FD4C22;
+    padding: 20px;
+}
