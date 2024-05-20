@@ -63,3 +63,10 @@ p.fresh-nounce{
 a#HeaderMenu-the-mushroom-show {
     color: #FD4C22;
 }
+.freshcap-Account {
+    margin-right: 120px;
+}
+details-modal.header__search {
+    width: 100%;
+    margin-right: 120px;
+}
