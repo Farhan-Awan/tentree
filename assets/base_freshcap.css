@@ -1,6 +1,9 @@
 .disclosure {
     display: none;
 }
+.header {
+    padding: 0 3rem 0 3rem!important;
+}
 
 @font-face {
     font-family: 'Floki';
@@ -35,12 +38,12 @@ h2, h3 {
 a, p, .h5 {
   font-family : 'Moderat'!important;
   text-transform: uppercase;
-  font-size: 20px !important;
+  font-size: 20px;
   font-style: normal;
   font-weight: bold !important;
 }
 p.announcement-bar__message.h5 {
-    font-size: 14px;
+    font-size: 14px!important;
 }
 .announcement-freshcap{
   background-color: #FD4C22;
