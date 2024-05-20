@@ -4,7 +4,6 @@
 .header {
     padding: 0 3rem 0 3rem!important;
 }
-
 @font-face {
     font-family: 'Floki';
     src: url("https://cdn.shopify.com/s/files/1/0596/1898/4089/files/Floki-Bold.woff?v=1716232914") format('woff'),
@@ -13,20 +12,18 @@
     font-style: normal;
     font-display: swap;
 }
-
 h1 {
   font-family : 'Floki'!important;
   text-transform: uppercase;
    font-size: 96px !important;
     line-height: 80% !important;
-}
+  }
 h2, h3 {
   font-family : 'Floki'!important;
   text-transform: uppercase;
    font-size: 32px !important;
     line-height: 80% !important;
 }
-
 @font-face {
     font-family: 'Moderat';
     src: url("https://cdn.shopify.com/s/files/1/0596/1898/4089/files/Moderat-Mono-Light.woff?v=1716232914") format('woff'),
