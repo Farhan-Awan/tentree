@@ -43,3 +43,6 @@ p.fresh-nounce{
       padding: 10px;
     margin: 0;
 }
+.list-menu__item{
+      text-transform: uppercase;
+}
