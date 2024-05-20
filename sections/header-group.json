@@ -11,10 +11,18 @@
             "text": "Ward off those winter illnesses with this exclusive discount on beta-glucans. Use code IMMUNITY at checkout.",
             "link": ""
           }
+        },
+        "announcement_89FiDN": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_89FiDN"
       ],
       "settings": {
         "color_scheme": "scheme-4",
