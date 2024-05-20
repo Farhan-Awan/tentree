@@ -36,8 +36,8 @@ h2, h3 {
 
 .announcement-freshcap{
   background-color: #FD4C22;
-    padding: 20px;
+    text-align: center;
 }
-p.announcement-bar__message.h5 {
+p.h5 {
     color: #fff;
 }
