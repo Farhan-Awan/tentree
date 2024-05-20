@@ -262,6 +262,7 @@
               {{ customer | avatar }}
             {%- else -%}
           {% comment %}    {% render 'icon-account' %} {% endcomment %}
+          <p clas="h5 rt-text-freshcap Account"> <span>Account</span> </p>
             {%- endif -%}
           </account-icon>
           <span class="visually-hidden">
@@ -286,11 +287,11 @@
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
-            render 'icon-cart-empty'
           else
-            render 'icon-cart'
+          render 'icon-cart'
           endif
         -%}
+        <p clas="h5 rt-text-freshcap emp-cart"> <span>Account</span> </p>
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
