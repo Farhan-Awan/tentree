@@ -53,4 +53,7 @@ p.fresh-nounce{
 }
 .list-menu__item{
       text-transform: uppercase;
+  color: #1F1F1F;
+    font-weight: 700 !important;
+    font-size: 20px;
 }
