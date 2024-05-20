@@ -35,10 +35,13 @@ h2, h3 {
 a, p, .h5 {
   font-family : 'Moderat'!important;
   text-transform: uppercase;
-   font-size: 20px !important;
-      font-style: mono-regular;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: bold !important;
 }
-
+p.announcement-bar__message.h5 {
+    font-size: 14px;
+}
 .announcement-freshcap{
   background-color: #FD4C22;
     text-align: center;
