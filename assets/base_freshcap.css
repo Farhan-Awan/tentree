@@ -69,7 +69,6 @@ a#HeaderMenu-the-mushroom-show {
     color: #FD4C22;
 }
 .freshcap-Account {
-    width: 25% !important;
 }
 details-modal.header__search {
     width: 20%;
@@ -91,7 +90,7 @@ details-modal.header__search {
     width: 60%;
 }
 .header__icon--account {
-    width: 120px!important;
+     width: 25% !important;
 }
 .freshcap-quiz {
   position:relative;
