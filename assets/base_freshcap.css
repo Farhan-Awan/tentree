@@ -90,6 +90,9 @@ details-modal.header__search {
     max-width: 100%;
     width: 60%;
 }
+.header__icon--account {
+    width: 120px!important;
+}
 .freshcap-quiz {
   position:relative;
     display: flex;
