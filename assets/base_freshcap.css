@@ -69,14 +69,14 @@ a#HeaderMenu-the-mushroom-show {
     color: #FD4C22;
 }
 .freshcap-Account {
-    margin-right: 160px;
+    
 }
 details-modal.header__search {
-    width: 100%;
-    margin-right: 120px;
+    width: 10%;
+    margin-right: 0px;
 }
 .freshcap-cart {
-    margin-right: 80px;
+    margin-right: 0px;
 }
 .cart-count-bubble {
     background-color: rgb(253 249 249)!important;
@@ -86,14 +86,16 @@ details-modal.header__search {
     left: 2.2rem!important;
 }
 .header__icons{
-  justify-self: center!important;
+      justify-self: end;
+    max-width: 100%;
+    width: 60%;
 }
 .freshcap-quiz {
   position:relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
 }
 .fresh-cstm-search {
     display: flex;
