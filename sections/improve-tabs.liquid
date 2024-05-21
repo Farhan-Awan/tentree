@@ -116,7 +116,7 @@
                 {% endif %}
               </div>
               <a href="/cart/add" class="btn add-to-cart" data-product-id="{{ product.id }}">Add to Cart</a>
-              <a href="{{ product.url }}" class="btn">View Product</a>
+            {% comment %}  <a href="{{ product.url }}" class="btn">View Product</a> {% endcomment %}
             </div>
           {% endfor %}
         {% else %}
