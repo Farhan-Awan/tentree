@@ -73,8 +73,8 @@ a#HeaderMenu-the-mushroom-show {
     max-width: 100%;
     width: 70%;
 }
-details-modal.header__search {
-    text-decoration: none;
+details-modal.header__search * {
+    text-decoration: none!important;
 }
 details-modal.header__search {
     width: 20%;
