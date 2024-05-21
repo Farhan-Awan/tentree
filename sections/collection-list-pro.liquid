@@ -1,6 +1,178 @@
+	<style>
+      .colection_list_container {
+      max-width: 1500px;
+      margin: 0 auto;
+       min-height:760px;
+        background: #FFF9F6;
+    }
+   .collection_list_heading h2 {
+    font-size: 64px;
+    line-height: 75.65px;
+    padding-top: 10%;
+    margin-top: 0;
+     padding-left: 4%;
+    }
+  .collection_list_cta_all a {
+      text-decoration: none;
+      color: #000;
+    font-size:32px;
+    line-height:36.86px;
+    padding-left: 3%;
+    }
+  .collection_list_cta_all a:after
+  {
+    content:url('https://cdn.shopify.com/s/files/1/0596/1898/4089/files/Vector.png?v=1660587140');
+  }
+.leo-main-title{
+  color: #2D2D2D;
+  text-transform: capitalize;
+  padding: 0.7em 0;
+}
+.leo-container{
+  padding: 1em 0;
+} 
+@media screen and (max-width: 640px){
+  .leo-container{
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px){
+  .leo-container{
+        display: flex;
+    max-width: 1500px;
+    margin: auto;
+    width: 95%;
+  }
+}
+.leo-container .leo-title{
+  color: #1A1A1A;
+  margin-bottom: 10px;
+}
+.leo-content {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+}
+.leo-content .leo-content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 80%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.leo-content-image{
+  width: 90%;
+      margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+
+p.leo-content-text {
+    background: #000;
+    color: #000 !important;
+    width: 40%;
+    text-align: center;
+    padding: 8px 0;
+}
+.leo-content-details h3{
+  color: #000;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+      text-align: center;
+  font-size: 28px;
+    line-height: 37.82px;
+}
+.leo-content-details p{
+  color: #000;
+  font-size: 0.8em;
+} 
+.leo-content a {
+    text-decoration: none;
+}
+  @media only screen and (max-width: 600px){
+  .leo-content {width: 100%;}
+  
+}    
+</style>
+<div class="colection_list_container">
+   <div class="collection_list_heading"> <h2> {{ section.settings.sec_heading }}</h2> </div>
+<div class="leo-container">
+  {%for block in section.blocks%}
+  <div class="leo-content">
+    <a href="{{ block.settings.link }}">
+      <div class="leo-content-overlay"></div>
+      <img class="leo-content-image" src="{{block.settings.image | img_url: 'master'}}">
+      <div class="leo-content-details">
+        <h3 class="leo-content-title">{{block.settings.text}}</h3>
+        
+      </div>
+    </a>
+  </div>{%endfor%}
+</div>
+   <div class="collection_list_cta_all"> <a href="{{ section.settings.view_all_link }}" <h3> {{ section.settings.view_all }}</h3> </a> </div>
+</div>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Collection list Pro",
+    "settings": [
+       {
+          "type": "text",
+           "id": "sec_heading",
+          "label": "Heading"
+      },
+       {
+          "type": "text",
+           "id": "view_all",
+          "label": "View All Collection button"
+       },
+       {
+        "id": "view_all_link",
+        "type": "url",
+        "label": "Link URL View All"
+      }
+],
+"blocks": [
+    {
+      "type": "select",
+      "name": "Add Block",
+      "settings": [
+        {
+          "id": "image",
+          "type": "image_picker",
+       		"label": "Select Your Image"
+        },
+        {
+          "type": "text",
+           "id": "text",
+          "label": "Heading"
+            },
+  {
+      "id": "link",
+      "type": "url",
+      "label": "Link URL"
+    },
+    {
+      "id": "linktext",
+      "type": "text",
+      "label": "Link text",
+      "default": "Click here"
+    }
+      ]
+    }
+  ],
+   "presets": [
+    {
+      "name": "Collection list Pro"
+    }
+  ]
   }
 {% endschema %}
