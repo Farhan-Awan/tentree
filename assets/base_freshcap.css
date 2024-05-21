@@ -78,6 +78,7 @@ details-modal.header__search * {
 }
 details-modal.header__search {
     width: 20%;
+      padding-top: 5px
 }
 .fresh-cstm-search {
     display: flex;
