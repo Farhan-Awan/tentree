@@ -94,11 +94,9 @@ details-modal.header__search {
     text-decoration: none;
     color: #000;
 }
-.header__icon--account {
+.header__icon--account, .header__icon--cart {
      width: 25% !important;
-}
-.header__icon--cart {
-    width: 25% !important;
+      text-decoration: none;
 }
 .cart-count-bubble {
     background-color: rgb(253 249 249)!important;
