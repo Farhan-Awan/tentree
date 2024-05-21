@@ -143,9 +143,9 @@
       ],
       "settings": {
         "sec_title": "What do you <br> want to <br> improve?",
-        "all_txt": "",
-        "need_else": "",
-        "take_quiz": ""
+        "all_txt": "Shop all Immunity",
+        "need_else": "Need something else?",
+        "take_quiz": "Take the quiz"
       }
     }
   },
