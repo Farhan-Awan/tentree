@@ -89,14 +89,11 @@ details-modal.header__search {
   justify-self: center!important;
 }
 .freshcap-quiz {
-  position: absolute;
+  
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 20px;
 }
 .fresh-cstm-search {
     display: flex;
