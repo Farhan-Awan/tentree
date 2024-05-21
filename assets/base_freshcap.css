@@ -88,14 +88,14 @@ details-modal.header__search {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 12vw;
+    width: 10vw;
 }
 .freshcap-quiz a {
     text-decoration: none;
     color: #000;
 }
 .header__icon--account, .header__icon--cart {
-     width: 25% !important;
+     width: 20% !important;
       text-decoration: none;
 }
 .cart-count-bubble {
