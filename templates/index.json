@@ -94,14 +94,16 @@
         "select_LHb3V3": {
           "type": "select",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_40969_1.png",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "link": "",
-            "linktext": "Click here"
+            "link": "shopify:\/\/collections\/all-bird",
+            "linktext": "Shop Category"
           }
         },
         "select_mbdzYW": {
           "type": "select",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_40969_2.png",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "link": "",
             "linktext": "Click here"
@@ -110,6 +112,7 @@
         "select_hUNgq9": {
           "type": "select",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_40969_3.png",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "link": "",
             "linktext": "Click here"
