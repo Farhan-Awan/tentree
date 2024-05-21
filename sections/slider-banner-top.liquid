@@ -122,7 +122,10 @@
 .slider-card-container{
       min-height: 1250px;
 }
-    
+   @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) { 
+    /* STYLES HERE */
+ .slick-prev{ left: 2%;}
+} 
 /*   {% for block in section.blocks %}
 #jkb-{{ block.id }} {
   background-image: url('{{ block.settings.slide_images_mobile | img_url: 'master' }}') !important;
