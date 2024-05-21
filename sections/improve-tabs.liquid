@@ -32,6 +32,7 @@
   .products-container {
     flex: 3;
     padding: 20px;
+    padding-top: 70px;
     
   }
   .products-list {
@@ -75,7 +76,7 @@
 </style>
 {%   comment %}
 <div class="product-tabs-section">
-  <div class="tabs-container">
+  <div class="tabs-container page-width">
     {% for block in section.blocks %}
       <button class="tab-button" data-collection-handle="{{ block.settings.collection_handle }}">{{ block.settings.tab_title }}</button>
     {% endfor %}
