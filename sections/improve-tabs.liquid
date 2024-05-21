@@ -30,10 +30,17 @@
     border-left: 1px solid #ddd;
   }
   .products-list {
-    display: none;
+    
+     position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
   }
   .products-list.active {
-    display: block;
+    position: relative;
+  visibility: visible;
+  opacity: 1;
+    
   }
   .product-item {
     margin-bottom: 20px;
