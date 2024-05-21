@@ -257,12 +257,14 @@
 
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+          <div class="freshcap-Account" ><p clas="h5"> <span>Account</span> </p> </div>
+          {% comment %}
           <account-icon>
             {%- if customer and customer.has_avatar? -%}
               {{ customer | avatar }}
             {%- else -%}
-          {% comment %}    {% render 'icon-account' %} {% endcomment %}
-          <div class="freshcap-Account" ><p clas="h5"> <span>Account</span> </p> </div>
+              {% render 'icon-account' %}
+          
             {%- endif -%}
           </account-icon>
           <span class="visually-visible">
@@ -274,6 +276,8 @@
               endif
             -%}
           </span>
+            {% endcomment %}
+         
         </a>
       {%- endif -%}
 
