@@ -74,6 +74,9 @@ a#HeaderMenu-the-mushroom-show {
     width: 70%;
 }
 details-modal.header__search {
+    text-decoration: none;
+}
+details-modal.header__search {
     width: 20%;
 }
 .fresh-cstm-search {
