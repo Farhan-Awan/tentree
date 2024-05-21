@@ -4,12 +4,9 @@
        min-height:760px;
         background: #FDF6F1;
     }
-   .collection_list_heading h2 {
-    font-size: 64px;
-    line-height: 75.65px;
+   .collection_list_heading h1 {
     padding-top: 10%;
     margin-top: 0;
-     padding-left: 4%;
     }
   .collection_list_cta_all a {
       text-decoration: none;
@@ -109,7 +106,7 @@ p.leo-content-text {
 
 <div class="colection_list_container">
   <div class="col-list-bgimage">
-   <div class="collection_list_heading"> <h2> {{ section.settings.sec_heading }}</h2> </div>
+   <div class="collection_list_heading"> <h1> {{ section.settings.sec_heading }}</h1> </div>
   <div class="collection_list_cta_all"> <p> {{ section.settings.view_all }} </p> </div>
 <div class="leo-container">
   {%for block in section.blocks%}
