@@ -59,8 +59,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40969.png",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "link": "",
-            "linktext": "Click here"
+            "linkshop": "shopify:\/\/collections",
+            "shoptext": "Shop category"
           }
         },
         "select_LHb3V3": {
@@ -68,8 +68,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40969_1.png",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "link": "shopify:\/\/collections\/all-bird",
-            "linktext": "Shop Category"
+            "linkshop": "",
+            "shoptext": "Collection button here"
           }
         },
         "select_mbdzYW": {
@@ -77,8 +77,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40969_2.png",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "link": "",
-            "linktext": "Click here"
+            "linkshop": "",
+            "shoptext": "Collection button here"
           }
         },
         "select_hUNgq9": {
@@ -86,8 +86,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40969_3.png",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "link": "",
-            "linktext": "Click here"
+            "linkshop": "",
+            "shoptext": "Collection button here"
           }
         }
       },
@@ -98,7 +98,7 @@
         "select_hUNgq9"
       ],
       "settings": {
-        "sec_heading": "The best mushrooms <br> available.",
+        "sec_heading": "The best mushrooms  available.",
         "view_all": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "view_all_link": ""
       }
