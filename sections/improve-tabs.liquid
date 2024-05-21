@@ -8,16 +8,18 @@
     display: flex;
     flex-direction: column;
   }
-  .tab-button {
-    padding: 10px;
+   .tab-button {
+    padding: 20px 60px;
     cursor: pointer;
     border: none;
     background-color: #f0f0f0;
     margin-bottom: 5px;
-    text-align: left;
+    text-align: center;
+    width: 230px;
+    margin: 10px;
   }
   .tab-button.active {
-    background-color: #d0d0d0;
+    background-color: #1F1F1F;
   }
   .products-container {
     flex: 3;
@@ -115,7 +117,7 @@
                   <span class="review-count">({{ product.metafields.reviews.count }} Reviews)</span>
                 {% endif %}
               </div>
-              <a href="/cart/add" class="btn add-to-cart" data-product-id="{{ product.id }}">Add to Cart</a>
+              <a href="/cart/add" class="btn add-to-cart button" data-product-id="{{ product.id }}">Add to Cart</a>
             {% comment %}  <a href="{{ product.url }}" class="btn">View Product</a> {% endcomment %}
             </div>
           {% endfor %}
