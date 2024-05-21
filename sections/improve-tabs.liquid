@@ -98,7 +98,7 @@
               <p>{{ product.price | money }}</p>
               <div class="product-tags">
                 {% for tag in product.tags limit: 3 %}
-                  <span class="tag">{{ tag }}</span>
+                  <span class="tag">{{ tag }} |</span>
                 {% endfor %}
               </div>
               <div class="product-reviews">
