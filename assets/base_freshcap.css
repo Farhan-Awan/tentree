@@ -75,7 +75,6 @@ a#HeaderMenu-the-mushroom-show {
 }
 details-modal.header__search {
     width: 20%;
-    margin-right: 0px;
 }
 .fresh-cstm-search {
     display: flex;
@@ -109,6 +108,7 @@ details-modal.header__search {
     /* STYLES HERE */
   .freshcap-quiz{width: 42%!important;}
   .header__icons{width: 78%!important;}
+  details-modal.header__search {width: 18%;}
 }
 
 
