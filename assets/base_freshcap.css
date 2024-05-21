@@ -89,11 +89,12 @@ details-modal.header__search {
     max-width: 100%;
     width: 60%;
 }
-.header__icon--cart {
-    width: 25% !important;
-}
-.header__icon--account {
-     width: 25% !important;
+
+.fresh-cstm-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 .freshcap-quiz {
   position:relative;
@@ -106,11 +107,11 @@ details-modal.header__search {
     text-decoration: none;
     color: #000;
 }
-.fresh-cstm-search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+.header__icon--account {
+     width: 25% !important;
+}
+.header__icon--cart {
+    width: 25% !important;
 }
 /* Top first section css */
 
