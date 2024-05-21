@@ -126,7 +126,7 @@ p.leo-content-text {
       <div class="leo-content-overlay"></div>
       <img class="leo-content-image" src="{{block.settings.image | img_url: 'master'}}">
       <div class="leo-content-details">
-        <h3 class="leo-content-title">{{block.settings.text}}</h3>
+        <a class="leo-content-title" href="{{ block.settings.linkshop }}">{{block.settings.shoptext}}</a>
       </div>
     </a>
   </div>{%endfor%}
@@ -169,15 +169,15 @@ p.leo-content-text {
           "label": "Heading"
             },
   {
-      "id": "link",
+      "id": "linkshop",
       "type": "url",
-      "label": "Link URL"
+      "label": "Link collection URL"
     },
     {
-      "id": "linktext",
+      "id": "shoptext",
       "type": "text",
       "label": "Link text",
-      "default": "Click here"
+      "default": "Collection button here"
     }
       ]
     }
