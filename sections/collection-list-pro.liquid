@@ -105,6 +105,7 @@ p.leo-content-text {
 </style>
 <div class="colection_list_container">
    <div class="collection_list_heading"> <h2> {{ section.settings.sec_heading }}</h2> </div>
+  <div class="collection_list_cta_all"> <p> {{ section.settings.view_all }} </p> </div>
 <div class="leo-container">
   {%for block in section.blocks%}
   <div class="leo-content">
@@ -118,7 +119,7 @@ p.leo-content-text {
     </a>
   </div>{%endfor%}
 </div>
-   <div class="collection_list_cta_all"> <a href="{{ section.settings.view_all_link }}" > <h3> {{ section.settings.view_all }} </h3> </a> </div>
+   
 </div>
 {% schema %}
   {
@@ -132,7 +133,7 @@ p.leo-content-text {
        {
           "type": "text",
            "id": "view_all",
-          "label": "View All Collection button"
+          "label": "collection substitle"
        },
        {
         "id": "view_all_link",
