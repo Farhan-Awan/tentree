@@ -98,8 +98,8 @@
         "select_hUNgq9"
       ],
       "settings": {
-        "sec_heading": "The best mushrooms available.",
-        "view_all": "view All collection",
+        "sec_heading": "The best mushrooms <br> available.",
+        "view_all": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "view_all_link": ""
       }
     }
