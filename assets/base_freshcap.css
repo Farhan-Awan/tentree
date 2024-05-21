@@ -85,7 +85,9 @@ details-modal.header__search {
     bottom: 1.2rem!important;
     left: 2.2rem!important;
 }
-
+.header__icons{
+  justify-self: center!important;
+}
 
 /* Top first section css */
 
