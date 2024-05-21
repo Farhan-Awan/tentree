@@ -71,7 +71,7 @@ a#HeaderMenu-the-mushroom-show {
 .header__icons{
       justify-self: end;
     max-width: 100%;
-    width: 68%;
+    width: 70%;
 }
 details-modal.header__search {
     width: 18%;
@@ -88,14 +88,14 @@ details-modal.header__search {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 34%;
+    width: 35%;
 }
 .freshcap-quiz a {
     text-decoration: none;
     color: #000;
 }
 .header__icon--account, .header__icon--cart {
-     width: 20% !important;
+     width: 22% !important;
       text-decoration: none;
 }
 .cart-count-bubble {
