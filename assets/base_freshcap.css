@@ -105,10 +105,10 @@ details-modal.header__search {
     bottom: 1.4rem!important;
     left: 10.2rem !important;
 }
-@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1496px) { 
     /* STYLES HERE */
-  .freshcap-quiz{width: 38%;}
-  .header__icons{width: 75%;}
+  .freshcap-quiz{width: 38%!important;}
+  .header__icons{width: 75%!important;}
 }
 
 
