@@ -86,8 +86,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40969_3.png",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "linkshop": "",
-            "shoptext": "Collection button here"
+            "linkshop": "shopify:\/\/collections",
+            "shoptext": "Shop category"
           }
         }
       },
