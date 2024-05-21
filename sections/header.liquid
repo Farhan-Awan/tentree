@@ -257,7 +257,7 @@
       <div class="freshcap-quiz"> <a href="#"> <span> Take the Quiz</span> </a> </div>
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
-          <div class="freshcap-Account" ><p clas="h5"> <span>Account</span> </p> </div>
+          <div class="freshcap-Account" ><p class="h5"> <span>Account</span> </p> </div>
           {% comment %}
           <account-icon>
             {%- if customer and customer.has_avatar? -%}
@@ -289,7 +289,7 @@
       {%- endfor -%}
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        <div class="freshcap-cart" ><p clas="h5"> <span>Cart</span> </p> </div>
+        <div class="freshcap-cart" ><p class="h5"> <span>Cart</span> </p> </div>
         {% comment %}
         {%- liquid
           if cart == empty
