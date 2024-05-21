@@ -58,7 +58,7 @@
           "type": "select",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40969.png",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "linkshop": "shopify:\/\/collections",
             "shoptext": "Shop category"
           }
@@ -67,7 +67,7 @@
           "type": "select",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40969_1.png",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "linkshop": "shopify:\/\/collections",
             "shoptext": "Shop category"
           }
@@ -76,7 +76,7 @@
           "type": "select",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40969_2.png",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "linkshop": "shopify:\/\/collections",
             "shoptext": "Shop category"
           }
@@ -85,7 +85,7 @@
           "type": "select",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40969_3.png",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "linkshop": "shopify:\/\/collections",
             "shoptext": "Shop category"
           }
@@ -102,10 +102,53 @@
         "view_all": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "view_all_link": ""
       }
+    },
+    "improve_tabs_XHq9RH": {
+      "type": "improve-tabs",
+      "blocks": {
+        "tab_qft3Fm": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Focus",
+            "collection_handle": "shirt-collection-sec-iii"
+          }
+        },
+        "tab_imDPzL": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Energy",
+            "collection_handle": "baron"
+          }
+        },
+        "tab_FHWyEz": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "immunity",
+            "collection_handle": "best-sellers-west-1"
+          }
+        },
+        "tab_wQfAtw": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Mood",
+            "collection_handle": "anell"
+          }
+        }
+      },
+      "block_order": [
+        "tab_qft3Fm",
+        "tab_imDPzL",
+        "tab_FHWyEz",
+        "tab_wQfAtw"
+      ],
+      "settings": {
+        "sec_title": ""
+      }
     }
   },
   "order": [
     "slider_banner_top_bX6fVa",
-    "collection_list_pro_aDaLig"
+    "collection_list_pro_aDaLig",
+    "improve_tabs_XHq9RH"
   ]
 }
