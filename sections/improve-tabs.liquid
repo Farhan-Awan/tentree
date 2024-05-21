@@ -91,7 +91,7 @@
       <div class="products-list" id="{{ block.settings.collection_handle }}">
         {% assign collection = collections[block.settings.collection_handle] %}
         {% if collection %}
-          {% for product in collection.products limit: 4 %}
+          {% for product in collection.products limit: 3 %}
             <div class="product-item">
               <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
               <h3>{{ product.title }}</h3>
