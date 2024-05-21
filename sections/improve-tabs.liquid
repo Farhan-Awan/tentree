@@ -153,7 +153,12 @@
                   <span class="review-count">({{ product.metafields.reviews.count }} Reviews)</span>
                 {% endif %}
               </div>
-              <a href="/cart/add" class="btn add-to-cart button" data-product-id="{{ product.id }}">Add to Cart</a>
+              <form method="post" action="/cart/add">
+                    <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                      <input min="1" type="number" id="quantity" name="quantity" value="1"/>
+                        <input type="submit" value="Add to cart"  data-product-id="{{ product.id }}" class="btn add-to-cart button" />
+                        
+                      </form>
             {% comment %}  <a href="{{ product.url }}" class="btn">View Product</a> {% endcomment %}
             </div>
           {% endfor %}
