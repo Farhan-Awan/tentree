@@ -299,6 +299,7 @@
         -%}
         
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+         {% endcomment %}
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
             {%- if cart.item_count < 100 -%}
@@ -307,7 +308,7 @@
             <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
           </div>
         {%- endif -%}
-        {% endcomment %}
+       
       </a>
     </div>
   </header>
