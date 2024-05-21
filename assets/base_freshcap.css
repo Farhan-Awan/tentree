@@ -105,7 +105,8 @@ details-modal.header__search {
     bottom: 1.4rem!important;
     left: 10.2rem !important;
 }
-media only screen and (max-width 1495px){
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+    /* STYLES HERE */
   .freshcap-quiz{width: 38%;}
   .header__icons{width: 75%;}
 }
