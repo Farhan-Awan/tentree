@@ -97,6 +97,10 @@ details-modal.header__search {
     align-items: center;
     width: 50%;
 }
+.freshcap-quiz a {
+    text-decoration: none;
+    color: #000;
+}
 .fresh-cstm-search {
     display: flex;
     justify-content: center;
