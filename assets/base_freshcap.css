@@ -88,7 +88,7 @@ details-modal.header__search {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 10vw;
+    width: 32%;
 }
 .freshcap-quiz a {
     text-decoration: none;
