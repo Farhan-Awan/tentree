@@ -68,28 +68,15 @@ p.fresh-nounce{
 a#HeaderMenu-the-mushroom-show {
     color: #FD4C22;
 }
-.freshcap-Account {
-}
-details-modal.header__search {
-    width: 20%;
-    margin-right: 0px;
-}
-.freshcap-cart {
-    margin-right: 0px;
-}
-.cart-count-bubble {
-    background-color: rgb(253 249 249)!important;
-    color: rgb(12 12 12)!important;
-    font-size: 2.5rem!important;
-    bottom: 1.2rem!important;
-    left: 2.2rem!important;
-}
 .header__icons{
       justify-self: end;
     max-width: 100%;
-    width: 60%;
+    width: 75%;
 }
-
+details-modal.header__search {
+    width: 18%;
+    margin-right: 0px;
+}
 .fresh-cstm-search {
     display: flex;
     justify-content: center;
@@ -112,6 +99,13 @@ details-modal.header__search {
 }
 .header__icon--cart {
     width: 25% !important;
+}
+.cart-count-bubble {
+    background-color: rgb(253 249 249)!important;
+    color: rgb(12 12 12)!important;
+    font-size: 2.5rem!important;
+    bottom: 1.2rem!important;
+    left: 2.2rem!important;
 }
 /* Top first section css */
 
