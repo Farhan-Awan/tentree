@@ -72,7 +72,7 @@ a#HeaderMenu-the-mushroom-show {
     
 }
 details-modal.header__search {
-    width: 10%;
+    width: 20%;
     margin-right: 0px;
 }
 .freshcap-cart {
@@ -98,7 +98,7 @@ details-modal.header__search {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 35%;
 }
 .freshcap-quiz a {
     text-decoration: none;
