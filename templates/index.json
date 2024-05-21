@@ -90,10 +90,37 @@
             "link": "",
             "linktext": "Click here"
           }
+        },
+        "select_LHb3V3": {
+          "type": "select",
+          "settings": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "link": "",
+            "linktext": "Click here"
+          }
+        },
+        "select_mbdzYW": {
+          "type": "select",
+          "settings": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "link": "",
+            "linktext": "Click here"
+          }
+        },
+        "select_hUNgq9": {
+          "type": "select",
+          "settings": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "link": "",
+            "linktext": "Click here"
+          }
         }
       },
       "block_order": [
-        "select_zfe7zL"
+        "select_zfe7zL",
+        "select_LHb3V3",
+        "select_mbdzYW",
+        "select_hUNgq9"
       ],
       "settings": {
         "sec_heading": "The best mushrooms available.",
