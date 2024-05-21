@@ -98,12 +98,14 @@
     {% for block in section.blocks %}
       <button class="tab-button" data-collection-handle="{{ block.settings.collection_handle }}">{{ block.settings.tab_title }}</button>
     {% endfor %}
+    <div class="tab-below-content">
      <div class="need-title-improve">
     <h3>{{ section.settings.need_else }}</h3>
   </div>
      <div class="quiz-title-improve">
     <p>{{ section.settings.take_quiz }}</p>
   </div>
+    </div>
   </div>
   <div class="products-container">
     {% for block in section.blocks %}
