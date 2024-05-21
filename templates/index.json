@@ -78,10 +78,33 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "collection_list_pro_aDaLig": {
+      "type": "collection-list-pro",
+      "blocks": {
+        "select_zfe7zL": {
+          "type": "select",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_40969.png",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "link": "",
+            "linktext": "Click here"
+          }
+        }
+      },
+      "block_order": [
+        "select_zfe7zL"
+      ],
+      "settings": {
+        "sec_heading": "The best mushrooms available.",
+        "view_all": "view All collection",
+        "view_all_link": ""
+      }
     }
   },
   "order": [
     "slider_banner_top_bX6fVa",
-    "featured_collection"
+    "featured_collection",
+    "collection_list_pro_aDaLig"
   ]
 }
