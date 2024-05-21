@@ -142,7 +142,10 @@
         "tab_wQfAtw"
       ],
       "settings": {
-        "sec_title": ""
+        "sec_title": "What do you <br> want to <br> improve?",
+        "all_txt": "",
+        "need_else": "",
+        "take_quiz": ""
       }
     }
   },
