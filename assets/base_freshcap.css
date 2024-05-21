@@ -87,6 +87,17 @@ details-modal.header__search {
 }
 .header__icons{
   justify-self: center!important;
+  position: relative;
+}
+.freshcap-quiz {
+  position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 20px;
 }
 
 /* Top first section css */
