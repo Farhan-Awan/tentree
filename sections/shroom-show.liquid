@@ -90,7 +90,7 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
     <div class="products">
-      {% for product in collections.custom_collectionx.products limit:2 %}
+      {% for product in collections.custom_collectionx.products  %}
         <div class="product">
           <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
           <h3 class="product-title">{{ product.title }}</h3>
