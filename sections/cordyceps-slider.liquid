@@ -9,7 +9,16 @@
     max-width: 100%;
     width: 50%;
 }
-  
+  .freshcap-contx-container{
+    display: grid;
+    grid-template-columns: 100%;
+    min-height: 500px;
+    align-items: center;
+    max-width: 100%;
+    width: 50%;
+    margin: revert;
+    padding: 0 3rem !important;
+  }
    @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) { 
     /* STYLES HERE */
  .slick-prev{ left: 2%!important;}
@@ -36,7 +45,7 @@
        <img class="freshcap-content-image" src="{{block.settings.slide_img | image_url: width: 300}}" width="100%" height="auto">
        {% endif %}
      </div>
-    <div class="slider-card-container page-width">
+    <div class="freshcap-contx-container page-width">
          <div class="slider-card-txt">
        <h1>15% off immunity boosting mushrooms.</h1>
          <p class="h5 rt-text-freshcap"><span>Ward off those winter illnesses with this exclusive discount on beta-glucans. Use code IMMUNITY at checkout.</span></p>
