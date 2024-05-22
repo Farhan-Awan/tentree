@@ -83,11 +83,12 @@
     </a>
   </div>
   <div class="products-section page-width">
-    <h2 class="section-title">THE MUSHROOM SHOW</h2>
+    <h2 class="section-title">{{ section.settings.tx_shroom }}</h2>
     <p class="section-subtitle">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      {{ section.settings.rich_shroom }}
     </p>
     <div class="products-freshcap-new">
+      <div class="content-episode">{{ section.settings.pro_epi }} </div>
       {% for block in section.blocks %}
           {% assign collection = collections[block.settings.custom_collectionx] %}
         {% if collection %}
@@ -127,7 +128,7 @@
       "type": "richtext",
       "id": "rich_shroom",
       "label": "shromm show rich text",
-      "default": "<p> hellow </p>"
+      "default": "<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>"
     },
     {
       "type": "text",
