@@ -215,6 +215,50 @@
     },
     "functional_mushroom_nnyBUM": {
       "type": "functional-mushroom",
+      "blocks": {
+        "select_rVwtmw": {
+          "type": "select",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_40773.png",
+            "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          }
+        },
+        "select_ULRUdj": {
+          "type": "select",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_40773_1.png",
+            "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          }
+        },
+        "select_JVhGge": {
+          "type": "select",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_40773_2.png",
+            "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          }
+        },
+        "select_3m46Q6": {
+          "type": "select",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_40773_3.png",
+            "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          }
+        },
+        "select_bNdNpy": {
+          "type": "select",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_40773_4.png",
+            "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          }
+        }
+      },
+      "block_order": [
+        "select_rVwtmw",
+        "select_ULRUdj",
+        "select_JVhGge",
+        "select_3m46Q6",
+        "select_bNdNpy"
+      ],
       "settings": {
         "sec_heading": "Functional Mushrooms <br> are not psychedelic mushrooms",
         "view_all": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
