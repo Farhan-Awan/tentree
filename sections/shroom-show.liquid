@@ -60,7 +60,7 @@
 
 .product-tags-shroom {
   font-size: 14px;
-  color: #555;
+  color: #000;
   margin-bottom: 10px;
   
 }
@@ -93,7 +93,7 @@
         <div class="product-inside-cap">
           <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
           <h3 class="product-title">{{ product.title }}</h3>
-          <p class="product-price">{{ product.price | money }}</p>
+          <h3 class="product-price">{{ product.price | money }}</h3>
           <p class="product-tags-shroom">{{ product.tags | join: '|' }}</p>
           <a href="{{ product.url }}" class="shop-now-button button">Shop Now</a>
         
