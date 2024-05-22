@@ -314,6 +314,12 @@
       ],
       "settings": {
       }
+    },
+    "shroom_show_DtbYBX": {
+      "type": "shroom-show",
+      "settings": {
+        "custom_collectionx": "earrings"
+      }
     }
   },
   "order": [
@@ -322,6 +328,7 @@
     "improve_tabs_XHq9RH",
     "marque_freshcap_sec_WjYmrE",
     "functional_mushroom_nnyBUM",
-    "cordyceps_slider_dCAyxh"
+    "cordyceps_slider_dCAyxh",
+    "shroom_show_DtbYBX"
   ]
 }
