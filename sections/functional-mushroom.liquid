@@ -1,6 +1,77 @@
+
+<div class="colection_list_container">
+  <div class="col-list-bgimage">
+   <div class="collection_list_heading"> <h1> {{ section.settings.sec_heading }}</h1> </div>
+  <div class="collection_list_cta_all"> <p> {{ section.settings.view_all }} </p> </div>
+<div class="leo-container">
+  {%for block in section.blocks%}
+  <div class="leo-content">
+    <a href="{{ block.settings.link }}">
+      <div class="leo-content-overlay"></div>
+      <img class="leo-content-image" src="{{block.settings.image | img_url: 'master'}}">
+      <div class="leo-content-details">
+        <h3 class="cstm-col-text"><span>{{ block.settings.col_name }}</span></h3>
+        <a class="leo-content-title button" href="{{ block.settings.linkshop }}">{{block.settings.shoptext}}</a>
+      </div>
+    </a>
+  </div>{%endfor%}
+</div>
+  </div>
+</div>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Collection list Pro",
+    "settings": [
+       {
+          "type": "text",
+           "id": "sec_heading",
+          "label": "Heading"
+      },
+       {
+          "type": "text",
+           "id": "view_all",
+          "label": "collection substitle"
+       },
+       {
+        "id": "view_all_link",
+        "type": "url",
+        "label": "Link URL View All"
+      }
+],
+"blocks": [
+    {
+      "type": "select",
+      "name": "Add Block",
+      "settings": [
+        {
+          "id": "image",
+          "type": "image_picker",
+       		"label": "Select Your Image"
+        },
+        {
+          "type": "text",
+           "id": "col_name",
+          "label": "collection Heading",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+     {
+      "id": "linkshop",
+      "type": "url",
+      "label": "Link collection URL"
+    },
+    {
+      "id": "shoptext",
+      "type": "text",
+      "label": "Link text",
+      "default": "Shop category"
+    }
+      ]
+    }
+  ],
+   "presets": [
+    {
+      "name": "Collection list Pro"
+    }
+  ]
   }
 {% endschema %}
