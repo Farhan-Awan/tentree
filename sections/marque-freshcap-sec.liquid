@@ -31,18 +31,7 @@
       </div>
     {% endfor %}
   </marquee>
- <marquee class="GeneratedMarquee" direction="left" scrollamount="15" behavior="scroll">
-    {% for block in section.blocks %}
-      <div class="marquee-item">
-        {% if block.settings.icon %}
-          <img src="{{ block.settings.icon | img_url: '100x' }}" alt="Marquee Icon">
-        {% endif %}
-        {% if block.settings.text %}
-          <span>{{ block.settings.text }}</span>
-        {% endif %}
-      </div>
-    {% endfor %}
-  </marquee>
+
   {% endif %}
 </div>
 
