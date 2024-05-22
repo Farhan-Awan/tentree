@@ -72,6 +72,14 @@
 .need-title-improve a {
     text-decoration: none;
 }
+  input.btn.add-to-cart.button {
+    background: #FEC627;
+    color: #000;
+    font-family: 'moderat';
+    text-transform: uppercase;
+    width: 250px;
+    border: 1px solid;
+}
 </style>
 {%   comment %}
 <div class="product-tabs-section">
@@ -130,7 +138,7 @@
         {% if collection %}
           {% for product in collection.products limit: 3 %}
             <div class="product-item">
-              <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+              <img src="{{ product.featured_image | image_url: 'medium' }}" width="100%" height="auto" alt="{{ product.title }}">
               <h3>{{ product.title }}</h3>
               <p>{{ product.price | money }}</p>
               <div class="product-tags">
