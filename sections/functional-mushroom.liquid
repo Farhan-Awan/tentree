@@ -1,11 +1,15 @@
-
+<style>
+  .bord-chang{
+    border:none!important;
+  }
+</style>
 <div class="colection_list_container">
   <div class="col-list-bgimage">
    <div class="collection_list_heading"> <h1> {{ section.settings.sec_heading }}</h1> </div>
   <div class="collection_list_cta_all"> <p> {{ section.settings.view_all }} </p> </div>
 <div class="leo-container">
   {%for block in section.blocks%}
-  <div class="leo-content">
+  <div class="leo-content bord-chang">
     <a href="{{ block.settings.link }}">
       <div class="leo-content-overlay"></div>
       <img class="leo-content-image" src="{{block.settings.image | img_url: 'master'}}">
