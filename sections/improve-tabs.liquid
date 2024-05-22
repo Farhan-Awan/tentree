@@ -80,6 +80,9 @@
     width: 250px;
     border: 1px solid;
 }
+  .title-price-content{
+    display:flex;
+  }
 </style>
 {%   comment %}
 <div class="product-tabs-section">
@@ -140,8 +143,6 @@
             <div class="product-item">
               <img src="{{ product.featured_image | image_url: 'medium' }}" width="100%" height="auto" alt="{{ product.title }}">
               <div class="title-price-content"><h3>{{ product.title }}</h3> <p>{{ product.price | money }}</p></div>
-             
-             
               <div class="product-reviews">
                 {% if product.metafields.reviews.rating2 %}
                 <span class="rating">
