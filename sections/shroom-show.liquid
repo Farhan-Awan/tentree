@@ -97,14 +97,14 @@
       {% for block in section.blocks %}
           {% assign collection = collections[block.settings.custom_collectionx] %}
         {% if collection %}
-      {% for product in collection.products  %}
+      {% for product in collection.products  limit : 2%}
         <div class="product">
           <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
           <h3 class="product-title">{{ product.title }}</h3>
           <p class="product-price">{{ product.price | money }}</p>
           <p class="product-tags">{{ product.tags | join: ', ' }}</p>
           <a href="{{ product.url }}" class="shop-now-button">Shop Now</a>
-        <span>{{ block.settings.show_cto }}</span>
+        
         </div>
       {% endfor %}
           {% endif %}
@@ -133,11 +133,6 @@
           "type": "collection",
           "id": "custom_collectionx",
           "label": "Select Collection"
-      },
-          {
-          "type": "text",
-          "id": "show_cto",
-          "label": "add text"
       }
        ]
     }
