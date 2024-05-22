@@ -331,7 +331,7 @@
       "settings": {
         "man_pic": "shopify:\/\/shop_images\/Main_1.png",
         "tx_shroom": "the mushroom show",
-        "rich_shroom": "<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <\/p>",
+        "rich_shroom": "<p> Lorem ipsum dolor sit amet, consectetur adipiscing <br\/>elit, sed do eiusmod tempor incididunt ut labore et <br\/>dolore magna aliqua. Ut enim ad minim veniam, quis <br\/> nostrud exercitation ullamco laboris nisi ut aliquip <br\/>ex ea commodo consequat. <\/p>",
         "pro_epi": "Products featured in this episode."
       }
     },
