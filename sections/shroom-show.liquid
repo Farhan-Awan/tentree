@@ -102,7 +102,7 @@
           <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
           <h3 class="product-title">{{ product.title }}</h3>
           <p class="product-price">{{ product.price | money }}</p>
-          <p class="product-tags">{{ product.tags | join: ', ' }}</p>
+          <p class="product-tags-shroom">{{ product.tags | join: '|' }}</p>
           <a href="{{ product.url }}" class="shop-now-button">Shop Now</a>
         
         </div>
