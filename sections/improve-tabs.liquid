@@ -84,39 +84,17 @@
 }
   .title-price-content{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
+  }
+  .product-tags {
+    font-family: 'Moderat';
+    font-size: 16px;
+    padding-bottom: 30px;
   }
 </style>
-{% comment %}
-<div class="product-tabs-section">
-  <div class="tabs-container page-width">
-    {% for block in section.blocks %}
-      <button class="tab-button" data-collection-handle="{{ block.settings.collection_handle }}">{{ block.settings.tab_title }}</button>
-    {% endfor %}
-  </div>
-  <div class="products-container">
-    {% for block in section.blocks %}
-      <div class="products-list" id="{{ block.settings.collection_handle }}">
-        {% assign collection = collections[block.settings.collection_handle] %}
-        {% if collection %}
-          {% for product in collection.products %}
-            <div class="product-item">
-              <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
-              <h3>{{ product.title }}</h3>
-              <p>{{ product.price | money }}</p>
-              <a href="{{ product.url }}" class="btn">View Product</a>
-            </div>
-          {% endfor %}
-        {% else %}
-          <p>No products found in this collection.</p>
-        {% endif %}
-      </div>
-    {% endfor %}
-  </div>
-</div>
-{% endcomment %}
+
 <div class="product-tabs-section">
   
   <div class="tabs-container page-width">
