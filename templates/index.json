@@ -265,6 +265,11 @@
         "shop-al": "Shop all",
         "learn-cap": "Learn More"
       }
+    },
+    "cordyceps_slider_dCAyxh": {
+      "type": "cordyceps-slider",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -272,6 +277,7 @@
     "collection_list_pro_aDaLig",
     "improve_tabs_XHq9RH",
     "marque_freshcap_sec_WjYmrE",
-    "functional_mushroom_nnyBUM"
+    "functional_mushroom_nnyBUM",
+    "cordyceps_slider_dCAyxh"
   ]
 }
