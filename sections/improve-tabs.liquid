@@ -125,7 +125,7 @@
           {% for product in collection.products limit: 3 %}
             <div class="product-item">
               <img src="{{ product.featured_image | image_url: width: 300 }}" width="100%" height="auto" alt="{{ product.title }}">
-              <div class="title-price-content"><h3>{{ product.title | truncate: 15 }}</h3> <p>{{ product.price | money }}</p></div>
+              <div class="title-price-content"><h3>{{ product.title | truncate: 15 }}</h3> <h3>{{ product.price | money }}</h3></div>
               <div class="product-reviews">
                 {% if product.metafields.reviews.rating2 %}
                 <span class="rating">
