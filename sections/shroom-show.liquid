@@ -81,7 +81,7 @@
   <div class="video-section">
     <!-- Replace with the actual video link -->
     <a href="https://www.youtube.com/watch?v=video_id" target="_blank">
-      <img src="path_to_video_thumbnail.jpg" alt="The Mushroom Show">
+      <img src="{{ section.settings.man_pic }}" alt="The Mushroom Show">
     </a>
   </div>
   <div class="products-section">
@@ -112,6 +112,11 @@
       "type": "collection",
       "id": "custom_collectionx",
       "label": "Select Collection"
+    },
+    {
+      "type": "image_picker",
+      "id": "man_pic",
+      "label": "video thumb"
     }
   ],
   "presets": [
