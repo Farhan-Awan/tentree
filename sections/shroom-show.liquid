@@ -98,7 +98,7 @@
           {% assign collection = collections[block.settings.custom_collectionx] %}
         {% if collection %}
       {% for product in collection.products  limit : 2%}
-        <div class="product">
+        <div class="product-inside-cap">
           <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
           <h3 class="product-title">{{ product.title }}</h3>
           <p class="product-price">{{ product.price | money }}</p>
