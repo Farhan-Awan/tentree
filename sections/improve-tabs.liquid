@@ -160,7 +160,7 @@
                 </div>
                <div class="product-tags">
                 {% for tag in product.tags limit: 3 %}
-                  <span class="tag">{{ tag | join: '|' }} |</span>
+                  <span class="tag">{{ tag | join: '|' }}</span>
                 {% endfor %}
               </div>
               <form method="post" action="/cart/add">
