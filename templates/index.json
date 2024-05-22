@@ -178,13 +178,36 @@
             "icon": "shopify:\/\/shop_images\/Vector_ff2f666f-dac9-4b4f-b5c7-7c413133213f.png",
             "text": "health & immune support"
           }
+        },
+        "marquee_item_rFpRxC": {
+          "type": "marquee_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Vector_ff2f666f-dac9-4b4f-b5c7-7c413133213f.png",
+            "text": "focus & mental clarity"
+          }
+        },
+        "marquee_item_dyGt43": {
+          "type": "marquee_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Vector_ff2f666f-dac9-4b4f-b5c7-7c413133213f.png",
+            "text": "energy, stamina & endurance"
+          }
+        },
+        "marquee_item_KL4aam": {
+          "type": "marquee_item",
+          "settings": {
+            "text": ""
+          }
         }
       },
       "block_order": [
         "marquee_item_aCwJ6T",
         "marquee_item_jJHfgi",
         "marquee_item_fXhjfj",
-        "marquee_item_67hxk4"
+        "marquee_item_67hxk4",
+        "marquee_item_rFpRxC",
+        "marquee_item_dyGt43",
+        "marquee_item_KL4aam"
       ],
       "settings": {
       }
