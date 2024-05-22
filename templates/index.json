@@ -317,8 +317,19 @@
     },
     "shroom_show_DtbYBX": {
       "type": "shroom-show",
+      "blocks": {
+        "collection_HyJxte": {
+          "type": "collection",
+          "settings": {
+            "custom_collectionx": "necklaces-1",
+            "show_cto": "farhan Is working"
+          }
+        }
+      },
+      "block_order": [
+        "collection_HyJxte"
+      ],
       "settings": {
-        "custom_collectionx": "anell",
         "man_pic": "shopify:\/\/shop_images\/Main_1.png"
       }
     }
