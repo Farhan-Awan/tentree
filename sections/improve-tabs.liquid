@@ -139,13 +139,9 @@
           {% for product in collection.products limit: 3 %}
             <div class="product-item">
               <img src="{{ product.featured_image | image_url: 'medium' }}" width="100%" height="auto" alt="{{ product.title }}">
-              <h3>{{ product.title }}</h3>
-              <p>{{ product.price | money }}</p>
-              <div class="product-tags">
-                {% for tag in product.tags limit: 3 %}
-                  <span class="tag">{{ tag }} |</span>
-                {% endfor %}
-              </div>
+              <div class="title-price-content"><h3>{{ product.title }}</h3> <p>{{ product.price | money }}</p></div>
+             
+             
               <div class="product-reviews">
                 {% if product.metafields.reviews.rating2 %}
                 <span class="rating">
@@ -160,7 +156,11 @@
                 <span class="review-count">({{ product.metafields.reviews.count2 }} Reviews)</span>
                 {% endif %}
                 </div>
-
+               <div class="product-tags">
+                {% for tag in product.tags limit: 3 %}
+                  <span class="tag">{{ tag }} |</span>
+                {% endfor %}
+              </div>
               <form method="post" action="/cart/add">
                     <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
                       <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
