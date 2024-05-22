@@ -139,19 +139,20 @@
                 {% endfor %}
               </div>
               <div class="product-reviews">
-                {% if product.metafields.reviews.rating %}
-                  <span class="rating">
-                    {% for i in (1..5) %}
-                      {% if product.metafields.reviews.rating >= i %}
-                        ★
-                      {% else %}
-                        ☆
-                      {% endif %}
-                    {% endfor %}
+                {% if product.metafields.reviews.rating2 %}
+                <span class="rating">
+                  {% for i in (1..5) %}
+                    {% if product.metafields.reviews.rating2 >= i %}
+                  ★
+                    {% else %}
+                  ☆
+                    {% endif %}
+                {% endfor %}
                   </span>
-                  <span class="review-count">({{ product.metafields.reviews.count }} Reviews)</span>
+                <span class="review-count">({{ product.metafields.reviews.count2 }} Reviews)</span>
                 {% endif %}
-              </div>
+                </div>
+
               <form method="post" action="/cart/add">
                     <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
                       <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
