@@ -19,10 +19,9 @@
 <div class="slide_container">
    <div class="bird-land-slidee"> 
    {% for block in section.blocks %}
-     <div class="slider-vert-content">
-     <div class="fx-image-slide" style="background-image: url({{block.settings.slide_img | img_url: 'master' }})">
-  <div class="slider-card-container page-width">
-    
+  <div class="slider-vert-content">
+     <div class="fx-image-slide" style="background-image: url({{block.settings.slide_img | img_url: 'master' }})"></div>
+    <div class="slider-card-container page-width">
          <div class="slider-card-txt">
        <h1>15% off immunity boosting mushrooms.</h1>
          <p class="h5 rt-text-freshcap"><span>Ward off those winter illnesses with this exclusive discount on beta-glucans. Use code IMMUNITY at checkout.</span></p>
@@ -31,9 +30,8 @@
            <a href="#" class="button  btn-ban-1"> Shop all shrooms</a>
              <a href="#" class="button  btn-ban-2">Shop all shrooms </a>
          </div>
-       </div> 
-     </div>
-       </div> 
+    </div> 
+</div> 
     {%endfor%} 
 
    </div>
@@ -83,36 +81,6 @@
   {
     "name": "cordyceps-slider",
     "settings": [
-			{
-			"type": "text",
-			"id": "sec_heading",
-			"label": "Write section text"
-			},
-			  {
-      "type": "select",
-      "id": "color_scheme1",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "accent-1"
-        },
-        {
-          "value": "accent-2",
-          "label": "accent-2"
-        },
-        {
-          "value": "background-1",
-          "label": "background-1"
-        },
-        {
-          "value": "background-2",
-          "label": "background-2"
-        }
-      ],
-      "default": "accent-1",
-      "label": "choose background color",
-      "info": "accent-1"
-      }
 ],
 	"blocks": [
 	     {
