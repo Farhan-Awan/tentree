@@ -321,8 +321,7 @@
         "collection_HyJxte": {
           "type": "collection",
           "settings": {
-            "custom_collectionx": "necklaces-1",
-            "show_cto": "farhan Is working"
+            "custom_collectionx": "necklaces-1"
           }
         }
       },
@@ -331,6 +330,38 @@
       ],
       "settings": {
         "man_pic": "shopify:\/\/shop_images\/Main_1.png"
+      }
+    },
+    "marque_freshcap_sec_xDLcnM": {
+      "type": "marque-freshcap-sec",
+      "blocks": {
+        "marquee_item_zgKcan": {
+          "type": "marquee_item",
+          "settings": {
+            "text": "health & immune support"
+          }
+        },
+        "marquee_item_8NCMBf": {
+          "type": "marquee_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Vector_ff2f666f-dac9-4b4f-b5c7-7c413133213f.png",
+            "text": "focus & mental clarity"
+          }
+        },
+        "marquee_item_Dmrim9": {
+          "type": "marquee_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Vector_ff2f666f-dac9-4b4f-b5c7-7c413133213f.png",
+            "text": "energy, stamina & endurance"
+          }
+        }
+      },
+      "block_order": [
+        "marquee_item_zgKcan",
+        "marquee_item_8NCMBf",
+        "marquee_item_Dmrim9"
+      ],
+      "settings": {
       }
     }
   },
@@ -341,6 +372,7 @@
     "marque_freshcap_sec_WjYmrE",
     "functional_mushroom_nnyBUM",
     "cordyceps_slider_dCAyxh",
-    "shroom_show_DtbYBX"
+    "shroom_show_DtbYBX",
+    "marque_freshcap_sec_xDLcnM"
   ]
 }
