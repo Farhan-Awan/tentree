@@ -212,12 +212,20 @@
       ],
       "settings": {
       }
+    },
+    "functional_mushroom_nnyBUM": {
+      "type": "functional-mushroom",
+      "settings": {
+        "sec_heading": "Functional Mushrooms <br> are not psychedelic mushrooms",
+        "view_all": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      }
     }
   },
   "order": [
     "slider_banner_top_bX6fVa",
     "collection_list_pro_aDaLig",
     "improve_tabs_XHq9RH",
-    "marque_freshcap_sec_WjYmrE"
+    "marque_freshcap_sec_WjYmrE",
+    "functional_mushroom_nnyBUM"
   ]
 }
