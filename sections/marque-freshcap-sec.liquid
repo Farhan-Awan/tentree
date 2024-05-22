@@ -1,3 +1,37 @@
+<style>
+  .GeneratedMarquee {
+    display: flex;
+    align-items: center;
+  }
+  .marquee-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .marquee-item img {
+    margin-right: 10px;
+  }
+</style>
+<div class="csm-marq">
+  {% if template.name == 'index' %}
+  <marquee class="GeneratedMarquee" direction="left" scrollamount="15" behavior="scroll">
+    {% for block in section.blocks %}
+      <div class="marquee-item">
+        {% if block.settings.icon %}
+          <img src="{{ block.settings.icon | img_url: '100x' }}" alt="Marquee Icon">
+        {% endif %}
+        {% if block.settings.text %}
+          <span>{{ block.settings.text }}</span>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </marquee>
+  {% endif %}
+</div>
+
+
+
+
 {% schema %}
  {
   "name": "marque-freshcap-sec",
