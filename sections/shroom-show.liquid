@@ -104,6 +104,7 @@
           <p class="product-price">{{ product.price | money }}</p>
           <p class="product-tags">{{ product.tags | join: ', ' }}</p>
           <a href="{{ product.url }}" class="shop-now-button">Shop Now</a>
+        <span>{{ block.settings.show_cto }}</span>
         </div>
       {% endfor %}
           {% endif %}
