@@ -142,16 +142,58 @@
         "tab_wQfAtw"
       ],
       "settings": {
-        "sec_title": "What do you <br> want to <br> improve?",
+        "sec_title": "What do you  want to  improve?",
         "all_txt": "Shop all Immunity",
         "need_else": "Need something else?",
         "take_quiz": "Take the quiz"
+      }
+    },
+    "marque_freshcap_sec_WjYmrE": {
+      "type": "marque-freshcap-sec",
+      "blocks": {
+        "marquee_item_aCwJ6T": {
+          "type": "marquee_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Vector_ff2f666f-dac9-4b4f-b5c7-7c413133213f.png",
+            "text": "health & immune support"
+          }
+        },
+        "marquee_item_jJHfgi": {
+          "type": "marquee_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Vector_ff2f666f-dac9-4b4f-b5c7-7c413133213f.png",
+            "text": "focus & mental clarity"
+          }
+        },
+        "marquee_item_fXhjfj": {
+          "type": "marquee_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Vector_ff2f666f-dac9-4b4f-b5c7-7c413133213f.png",
+            "text": "energy, stamina & endurance"
+          }
+        },
+        "marquee_item_67hxk4": {
+          "type": "marquee_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Vector_ff2f666f-dac9-4b4f-b5c7-7c413133213f.png",
+            "text": "health & immune support"
+          }
+        }
+      },
+      "block_order": [
+        "marquee_item_aCwJ6T",
+        "marquee_item_jJHfgi",
+        "marquee_item_fXhjfj",
+        "marquee_item_67hxk4"
+      ],
+      "settings": {
       }
     }
   },
   "order": [
     "slider_banner_top_bX6fVa",
     "collection_list_pro_aDaLig",
-    "improve_tabs_XHq9RH"
+    "improve_tabs_XHq9RH",
+    "marque_freshcap_sec_WjYmrE"
   ]
 }
