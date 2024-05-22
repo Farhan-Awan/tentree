@@ -196,7 +196,8 @@
         "marquee_item_KL4aam": {
           "type": "marquee_item",
           "settings": {
-            "text": ""
+            "icon": "shopify:\/\/shop_images\/Vector_ff2f666f-dac9-4b4f-b5c7-7c413133213f.png",
+            "text": "health & immune support"
           }
         }
       },
