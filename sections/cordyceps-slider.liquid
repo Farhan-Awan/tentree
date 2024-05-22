@@ -1,6 +1,163 @@
+<style>	
+
+   @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) { 
+    /* STYLES HERE */
+ .slick-prev{ left: 2%!important;}
+} 
+/*   {% for block in section.blocks %}
+#jkb-{{ block.id }} {
+  background-image: url('{{ block.settings.slide_images_mobile | img_url: 'master' }}') !important;
+}
+{% endfor %}
+}
+ {% for block in section.blocks %}
+   #jkb-{{ block.id }}{
+    background-image: url({{block.settings.slide_img | img_url: 'master' }});
+  }
+   {% endfor %}} */   
+</style>
+<div class="slide_container">
+   <div class="bird-land-slidee"> 
+   {% for block in section.blocks %}
+     <div class="slider-vert-content">
+     <div class="fx-image-slide" style="background-image: url({{block.settings.slide_img | img_url: 'master' }})">
+  <div class="slider-card-container page-width">
+    
+         <div class="slider-card-txt">
+       <h1>15% off immunity boosting mushrooms.</h1>
+         <p class="h5 rt-text-freshcap"><span>Ward off those winter illnesses with this exclusive discount on beta-glucans. Use code IMMUNITY at checkout.</span></p>
+         </div>
+         <div class="banner-custom-button banner__buttons banner__buttons--multiple">
+           <a href="#" class="button  btn-ban-1"> Shop all shrooms</a>
+             <a href="#" class="button  btn-ban-2">Shop all shrooms </a>
+         </div>
+       </div> 
+     </div>
+       </div> 
+    {%endfor%} 
+
+   </div>
+</div> 
+<div class="bird-gray-line"> 
+       <p><b>Discover Your Perfect Pair</b> Try our Style Quiz to find the best pair for you. <a href="#" class="gray-link-bird">Take the Style Quiz</a>
+       </p>
+      </div>
+ <script> 
+  $(document).ready(function(){
+    $('.bird-land-slidee').slick({
+    vertical: false,
+     dots: true,
+       arrows: true,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+      responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+        }
+      }
+    ]
+  })
+});   
+		</script>
+ 
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "slider-banner-top",
+    "settings": [
+			{
+			"type": "text",
+			"id": "sec_heading",
+			"label": "Write section text"
+			},
+			  {
+      "type": "select",
+      "id": "color_scheme1",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "accent-1"
+        },
+        {
+          "value": "accent-2",
+          "label": "accent-2"
+        },
+        {
+          "value": "background-1",
+          "label": "background-1"
+        },
+        {
+          "value": "background-2",
+          "label": "background-2"
+        }
+      ],
+      "default": "accent-1",
+      "label": "choose background color",
+      "info": "accent-1"
+      }
+],
+	"blocks": [
+	     {
+       "name": "image",
+       "type": "image",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "slide_img",
+           "label": "Choose Image"
+         },
+         {
+           "type": "image_picker",
+           "id": "slide_images_mobile",
+           "label": "Choose Mobile Image"
+         },
+		 {
+          "type": "text",
+          "id": "text0",
+          "default": "Give customers details about the banner image(s) or content on the template.",
+          "label": "Heading descrip"
+        },
+		 {
+          "type": "text",
+          "id": "text1",
+          "default": "Give customers details about the banner image(s) or content on the template.",
+          "label": "Sub-Heading Descrip"
+        },
+  		{
+          "type": "text",
+          "id": "btn_start",
+          "label": "Start Shoping"
+        }		 
+	]
+ }
+],
+
+	 "presets": [
+    {
+      "name": "slider-banner-top",
+      "blocks": [
+        
+      ]
+    }
+  ]
   }
+
 {% endschema %}
