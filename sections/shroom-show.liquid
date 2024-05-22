@@ -87,8 +87,8 @@
   <div class="products-section page-width">
     <h2 class="section-title">{{ section.settings.tx_shroom }}</h2>
       {{ section.settings.rich_shroom }}
+     <div class="content-episode">{{ section.settings.pro_epi }} </div>
     <div class="products-freshcap-new">
-      <div class="content-episode">{{ section.settings.pro_epi }} </div>
       {% for block in section.blocks %}
           {% assign collection = collections[block.settings.custom_collectionx] %}
         {% if collection %}
