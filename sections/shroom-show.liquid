@@ -94,7 +94,10 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
     <div class="products">
-      {% for product in collections.custom_collectionx.products  %}
+      {% for block in section.blocks %}
+          {% assign collection = collections[block.settings.custom_collectionx] %}
+        {% if collection %}
+      {% for product in collection.products  %}
         <div class="product">
           <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
           <h3 class="product-title">{{ product.title }}</h3>
@@ -102,6 +105,8 @@
           <p class="product-tags">{{ product.tags | join: ', ' }}</p>
           <a href="{{ product.url }}" class="shop-now-button">Shop Now</a>
         </div>
+      {% endfor %}
+          {% endif %}
       {% endfor %}
     </div>
   </div>
