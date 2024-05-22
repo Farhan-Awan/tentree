@@ -21,7 +21,9 @@
    {% for block in section.blocks %}
   <div class="slider-vert-content">
      <div class="fx-image-slide-freshcap">
+         {% if block.settings.slide_img %}
        <img class="freshcap-content-image" src="{{block.settings.slide_img | image_url: width: 300}}" width="100%" height="auto">
+       {% endif %}
      </div>
     <div class="slider-card-container page-width">
          <div class="slider-card-txt">
