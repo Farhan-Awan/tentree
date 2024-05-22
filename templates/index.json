@@ -318,7 +318,8 @@
     "shroom_show_DtbYBX": {
       "type": "shroom-show",
       "settings": {
-        "custom_collectionx": "earrings"
+        "custom_collectionx": "earrings",
+        "man_pic": "shopify:\/\/shop_images\/Main_1.png"
       }
     }
   },
