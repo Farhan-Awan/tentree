@@ -30,6 +30,10 @@
   </div>{%endfor%}
 </div>
   </div>
+  <div class="learn-btn-content">
+     <a class=" shop-al-cap button" href="{{ block.settings.linkshop }}"><span>{{block.settings.shoptext}} </span></a>
+    <a class="learn-cap button" href="{{ block.settings.linkshop }}"><span>{{block.settings.shoptext}} </span></a>
+    </div>
 </div>
 {% schema %}
   {
@@ -59,6 +63,18 @@
         {
           "type": "text",
            "id": "col_name",
+          "label": "collection Heading",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        },
+        {
+          "type": "text",
+           "id": "learn-cap",
+          "label": "collection Heading",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        },
+        {
+          "type": "text",
+           "id": "shop-al",
           "label": "collection Heading",
           "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
         }
