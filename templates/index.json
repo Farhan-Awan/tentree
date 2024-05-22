@@ -220,35 +220,35 @@
           "type": "select",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40773_5.png",
-            "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            "col_name": "Potent Fruiting Body Extract"
           }
         },
         "select_ULRUdj": {
           "type": "select",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40773_7.png",
-            "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            "col_name": "Grain Free"
           }
         },
         "select_JVhGge": {
           "type": "select",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40773_8.png",
-            "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            "col_name": "Sustainably Farmed"
           }
         },
         "select_3m46Q6": {
           "type": "select",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40773_9.png",
-            "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            "col_name": "Organic & Non-GMO"
           }
         },
         "select_bNdNpy": {
           "type": "select",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40773_10.png",
-            "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            "col_name": "Tested for Quality and Safety"
           }
         }
       },
