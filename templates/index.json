@@ -277,10 +277,20 @@
             "text1": "Give customers details about the banner image(s) or content on the template.",
             "btn_start": ""
           }
+        },
+        "image_L6NGKb": {
+          "type": "image",
+          "settings": {
+            "slide_img": "shopify:\/\/shop_images\/Main_1.png",
+            "text0": "Give customers details about the banner image(s) or content on the template.",
+            "text1": "Give customers details about the banner image(s) or content on the template.",
+            "btn_start": ""
+          }
         }
       },
       "block_order": [
-        "image_7dDxnj"
+        "image_7dDxnj",
+        "image_L6NGKb"
       ],
       "settings": {
       }
