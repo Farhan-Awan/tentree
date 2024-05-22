@@ -60,7 +60,9 @@ p.fresh-nounce{
       margin: 0;
   font-size: 14px;
 }
-
+p.content-episode {
+    padding-top: 30px;
+}
 
 /* header css */
 
