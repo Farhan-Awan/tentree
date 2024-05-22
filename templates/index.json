@@ -219,35 +219,35 @@
         "select_rVwtmw": {
           "type": "select",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_40773.png",
+            "image": "shopify:\/\/shop_images\/Frame_40773_5.png",
             "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           }
         },
         "select_ULRUdj": {
           "type": "select",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_40773_1.png",
+            "image": "shopify:\/\/shop_images\/Frame_40773_7.png",
             "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           }
         },
         "select_JVhGge": {
           "type": "select",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_40773_2.png",
+            "image": "shopify:\/\/shop_images\/Frame_40773_8.png",
             "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           }
         },
         "select_3m46Q6": {
           "type": "select",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_40773_3.png",
+            "image": "shopify:\/\/shop_images\/Frame_40773_9.png",
             "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           }
         },
         "select_bNdNpy": {
           "type": "select",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_40773_4.png",
+            "image": "shopify:\/\/shop_images\/Frame_40773_10.png",
             "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           }
         }
