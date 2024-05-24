@@ -122,41 +122,6 @@
     {% endif %}
   </div>
 </div>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.category-button');
-    const subcategoryCards = document.querySelector('.subcategory-cards');
-    const productListings = document.querySelector('.product-listings');
-    const subcategoryLinks = document.querySelectorAll('.subcategory-card a');
-
-    function handleButtonClick(event) {
-      const url = event.currentTarget.getAttribute('data-url');
-      if (event.currentTarget.textContent === 'Beverages') {
-        subcategoryCards.style.display = 'flex';
-        productListings.innerHTML = ''; // Clear product listings when switching to 'Beverages' category
-      } else {
-        subcategoryCards.style.display = 'none';
-      }
-      history.pushState(null, '', url);
-    }
-
-    buttons.forEach(button => {
-      button.addEventListener('click', handleButtonClick);
-    });
-
-    subcategoryLinks.forEach(link => {
-      link.addEventListener('click', function(event) {
-        event.preventDefault();
-        const url = this.getAttribute('data-url');
-        history.pushState(null, '', url);
-      });
-    });
-
-    // Initial load based on the current collection
-    const initialUrl = "{{ settings.all_products_collection }}";
-    history.replaceState(null, '', initialUrl); // Replace initial state instead of pushing
-  });
-</script>
 
 
 {% schema %}
