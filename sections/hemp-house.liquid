@@ -121,8 +121,63 @@
       {% endfor %}
     {% endif %}
   </div>
+   <!-- Product Listings -->
+  <div class="product-listings"></div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.category-button');
+    const subcategoryCards = document.querySelector('.subcategory-cards');
+    const productListings = document.querySelector('.product-listings');
+    const subcategoryLinks = document.querySelectorAll('.subcategory-card a');
 
+    function fetchAndDisplayProducts(url) {
+      fetch(url + '.json')
+        .then(response => response.json())
+        .then(data => {
+          const products = data.products;
+          productListings.innerHTML = products.map(product => `
+            <div class="product-card">
+              <a href="/products/${product.handle}">
+                <img src="${product.images[0].src}" alt="${product.title}">
+                <div class="product-title">${product.title}</div>
+                <div class="product-price">From ${Shopify.formatMoney(product.variants[0].price)}</div>
+                ${product.available ? '' : '<div class="sold-out">SOLD OUT</div>'}
+              </a>
+            </div>
+          `).join('');
+        });
+    }
+
+    function handleButtonClick(event) {
+      const url = event.currentTarget.getAttribute('data-url');
+      fetchAndDisplayProducts(url);
+      if (event.currentTarget.textContent === 'Beverages') {
+        subcategoryCards.style.display = 'flex';
+      } else {
+        subcategoryCards.style.display = 'none';
+      }
+      history.pushState(null, '', url);
+    }
+
+    buttons.forEach(button => {
+      button.addEventListener('click', handleButtonClick);
+    });
+
+    subcategoryLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const url = this.getAttribute('data-url');
+        fetchAndDisplayProducts(url);
+        history.pushState(null, '', url);
+      });
+    });
+
+    // Initial load based on the current collection
+    const initialUrl = "{{ collection.url }}";
+    fetchAndDisplayProducts(initialUrl);
+  });
+</script>
 
 {% schema %}
 {
