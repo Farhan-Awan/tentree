@@ -73,31 +73,31 @@
   
   <!-- Category Buttons -->
   <div class="category-buttons">
-    <button class="category-button" data-url="{{ settings.all_products_collection }}">All Products</button>
-    <button class="category-button" data-url="{{ settings.edibles_collection }}">Edibles</button>
-    <button class="category-button" data-url="{{ settings.beverages_collection }}">Beverages</button>
+    <button class="category-button" data-url="{{ section.settings.all_products_collection }}">All Products</button>
+    <button class="category-button" data-url="{{ section.settings.edibles_collection }}">Edibles</button>
+    <button class="category-button" data-url="{{ section.settings.beverages_collection }}">Beverages</button>
   </div>
   
   <!-- Subcategory Cards (Initially hidden) -->
   {% if collection.title == 'Beverages' %}
     <div class="subcategory-cards">
       <div class="subcategory-card">
-        <a href="#" data-url="{{ settings.sub_collection_1 }}">
+        <a href="#" data-url="{{ section.settings.sub_collection_1 }}">
           <div class="label">Drink 1</div>
         </a>
       </div>
       <div class="subcategory-card">
-        <a href="#" data-url="{{ settings.sub_collection_2 }}">
+        <a href="#" data-url="{{ section.settings.sub_collection_2 }}">
           <div class="label">Drink 2</div>
         </a>
       </div>
       <div class="subcategory-card">
-        <a href="#" data-url="{{ settings.sub_collection_3 }}">
+        <a href="#" data-url="{{ section.settings.sub_collection_3 }}">
           <div class="label">Drink 3</div>
         </a>
       </div>
       <div class="subcategory-card">
-        <a href="#" data-url="{{ settings.sub_collection_4 }}">
+        <a href="#" data-url="{{ section.settings.sub_collection_4 }}">
           <div class="label">Drink 4</div>
         </a>
       </div>
