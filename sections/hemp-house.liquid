@@ -124,6 +124,7 @@
    <!-- Product Listings -->
   <div class="product-listings"></div>
 </div>
+{% javascript %}
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.category-button');
@@ -131,31 +132,19 @@
     const productListings = document.querySelector('.product-listings');
     const subcategoryLinks = document.querySelectorAll('.subcategory-card a');
 
-    function fetchAndDisplayProducts(url) {
-      fetch(url + '.json')
-        .then(response => response.json())
-        .then(data => {
-          const products = data.products;
-          productListings.innerHTML = products.map(product => `
-            <div class="product-card">
-              <a href="/products/${product.handle}">
-                <img src="${product.images[0].src}" alt="${product.title}">
-                <div class="product-title">${product.title}</div>
-                <div class="product-price">From ${Shopify.formatMoney(product.variants[0].price)}</div>
-                ${product.available ? '' : '<div class="sold-out">SOLD OUT</div>'}
-              </a>
-            </div>
-          `).join('');
-        });
-    }
-
     function handleButtonClick(event) {
       const url = event.currentTarget.getAttribute('data-url');
-      fetchAndDisplayProducts(url);
-      if (event.currentTarget.textContent === 'Beverages') {
-        subcategoryCards.style.display = 'flex';
-      } else {
-        subcategoryCards.style.display = 'none';
+      if (event.currentTarget.textContent === 'Beverages' && subcategoryCards) {
+        setTimeout(function() {
+          subcategoryCards.style.display = 'flex';
+        }, 3000); // 3-second delay
+        if (productListings) setTimeout(function() {
+          productListings.innerHTML = ''; // Clear product listings when switching to 'Beverages' category
+        }, 3000); // 3-second delay
+      } else if (subcategoryCards) {
+        setTimeout(function() {
+          subcategoryCards.style.display = 'none';
+        }, 3000); // 3-second delay
       }
       history.pushState(null, '', url);
     }
@@ -168,16 +157,17 @@
       link.addEventListener('click', function(event) {
         event.preventDefault();
         const url = this.getAttribute('data-url');
-        fetchAndDisplayProducts(url);
         history.pushState(null, '', url);
       });
     });
 
     // Initial load based on the current collection
-    const initialUrl = "{{ collection.url }}";
-    fetchAndDisplayProducts(initialUrl);
+    const initialUrl = "{{ settings.all_products_collection }}";
+    history.replaceState(null, '', initialUrl); // Replace initial state instead of pushing
   });
 </script>
+{% endjavascript %}
+
 
 {% schema %}
 {
