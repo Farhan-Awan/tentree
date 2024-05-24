@@ -33,13 +33,13 @@
     "hemp_house_WYrend": {
       "type": "hemp-house",
       "settings": {
-        "all_products_collection": "",
-        "edibles_collection": "",
-        "beverages_collection": "",
-        "sub_collection_1": "",
-        "sub_collection_2": "",
-        "sub_collection_3": "",
-        "sub_collection_4": ""
+        "all_products_collection": "shopify:\/\/collections",
+        "edibles_collection": "shopify:\/\/collections\/all-bird",
+        "beverages_collection": "shopify:\/\/collections\/anell",
+        "sub_collection_1": "shopify:\/\/collections\/shirt-collection-sec-iii",
+        "sub_collection_2": "shopify:\/\/collections\/batteries",
+        "sub_collection_3": "shopify:\/\/collections\/baron",
+        "sub_collection_4": "shopify:\/\/collections\/big-kids"
       }
     }
   },
