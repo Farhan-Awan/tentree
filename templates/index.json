@@ -59,7 +59,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40969.png",
             "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "linkshop": "shopify:\/\/collections",
+            "linkshop": "shopify:\/\/collections\/all-bird",
             "shoptext": "Shop category"
           }
         },
@@ -68,7 +68,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40969_1.png",
             "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "linkshop": "shopify:\/\/collections",
+            "linkshop": "shopify:\/\/collections\/now-on-sale",
             "shoptext": "Shop category"
           }
         },
