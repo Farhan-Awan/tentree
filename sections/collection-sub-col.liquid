@@ -1,6 +1,181 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+
+{% stylesheet %}
+<style>
+  .collection-sub-categories {
+    font-family: Arial, sans-serif;
   }
+  .breadcrumb {
+    margin-bottom: 10px;
+  }
+  .main-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .category-buttons button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .category-buttons button:hover {
+    background-color: #555;
+  }
+  .subcategory-cards {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .subcategory-card {
+    flex: 1;
+    text-align: center;
+  }
+  .subcategory-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .subcategory-card .label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .filters-sidebar {
+    margin-bottom: 20px;
+  }
+  .filters-sidebar .filter h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  .product-listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .product-card {
+    flex: 1 1 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  .product-card .product-title {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .product-card .product-price {
+    color: #333;
+    margin-top: 5px;
+  }
+  .product-card .sold-out {
+    color: red;
+    font-weight: bold;
+  }
+</style>
+{% endstylesheet %}
+
+<div class="collection-sub-categories">
+  <!-- Breadcrumb Navigation -->
+  <div class="breadcrumb">{{ 'Home' | link_to: '/' }} / {{ 'Collections' | link_to: '/collections' }} / {{ collection.title }}</div>
+  
+  <!-- Main Heading -->
+  <h1 class="main-heading">{{ collection.title }}</h1>
+  
+  <!-- Category Buttons -->
+  <div class="category-buttons">
+    <button data-filter="all-products">All Products</button>
+    <button data-filter="edibles">Edibles</button>
+    <button data-filter="beverages">Beverages</button>
+    <button data-filter="best-sellers">Best Sellers</button>
+    <button data-filter="new-arrivals">New Arrivals</button>
+    <button data-filter="cbd">CBD</button>
+    <button data-filter="volume-discount">Volume Discount</button>
+  </div>
+  
+  <!-- Subcategory Cards -->
+  <div class="subcategory-cards">
+    {% for subcollection in collections %}
+      <div class="subcategory-card">
+        <a href="{{ subcollection.url }}">
+          <img src="{{ subcollection.image | img_url: 'medium' }}" alt="{{ subcollection.title }}">
+          <div class="label">SHOP {{ subcollection.title }}</div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+  
+  <!-- Filters Sidebar -->
+  <div class="filters-sidebar">
+    <div class="filter" data-filter="effect">
+      <h3>Effect</h3>
+      <!-- Add filter options here -->
+    </div>
+    <div class="filter" data-filter="cannabinoid">
+      <h3>Cannabinoid</h3>
+      <!-- Add filter options here -->
+    </div>
+    <div class="filter" data-filter="product-type">
+      <h3>Product Type</h3>
+      <!-- Add filter options here -->
+    </div>
+    <div class="filter" data-filter="dosage">
+      <h3>Dosage</h3>
+      <!-- Add filter options here -->
+    </div>
+    <div class="filter" data-filter="brand">
+      <h3>Brand</h3>
+      <!-- Add filter options here -->
+    </div>
+    <div class="filter" data-filter="price">
+      <h3>Price</h3>
+      <!-- Add filter options here -->
+    </div>
+  </div>
+  
+  <!-- Product Listings -->
+  <div class="product-listings">
+    {% for product in collection.products %}
+      <div class="product-card">
+        <a href="{{ product.url }}">
+          <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+          <div class="product-title">{{ product.title }}</div>
+          <div class="product-price">From {{ product.price | money }}</div>
+          {% if product.available == false %}
+            <div class="sold-out">SOLD OUT</div>
+          {% endif %}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% javascript %}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Add JavaScript functionality for filtering
+    const buttons = document.querySelectorAll('.category-buttons button');
+    buttons.forEach(button => {
+      button.addEventListener('click', function() {
+        const filter = this.getAttribute('data-filter');
+        // Implement filter functionality based on the filter value
+      });
+    });
+  });
+</script>
+{% endjavascript %}
+{% schema %}
+{
+  "name": "collection-sub-col",
+  "settings": [],
+  "presets": [
+    {
+      "name": "collection-sub-col",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
