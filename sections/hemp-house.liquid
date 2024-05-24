@@ -73,38 +73,56 @@
   
   <!-- Category Buttons -->
   <div class="category-buttons">
-    <button class="category-button" data-url="{{ section.settings.all_products_collection }}">All Products</button>
-    <button class="category-button" data-url="{{ section.settings.edibles_collection }}">Edibles</button>
-    <button class="category-button" data-url="{{ section.settings.beverages_collection }}">Beverages</button>
+    <button class="category-button" data-url="{{ settings.all_products_collection }}">All Products</button>
+    <button class="category-button" data-url="{{ settings.edibles_collection }}">Edibles</button>
+    <button class="category-button" data-url="{{ settings.beverages_collection }}">Beverages</button>
   </div>
   
   <!-- Subcategory Cards (Initially hidden) -->
-  <div class="subcategory-cards" style="display: none;">
-    <div class="subcategory-card">
-      <a href="#" data-url="{{ section.settings.sub_collection_1 }}">
-        <div class="label">Drink 1</div>
-      </a>
+  {% if collection.title == 'Beverages' %}
+    <div class="subcategory-cards">
+      <div class="subcategory-card">
+        <a href="#" data-url="{{ settings.sub_collection_1 }}">
+          <div class="label">Drink 1</div>
+        </a>
+      </div>
+      <div class="subcategory-card">
+        <a href="#" data-url="{{ settings.sub_collection_2 }}">
+          <div class="label">Drink 2</div>
+        </a>
+      </div>
+      <div class="subcategory-card">
+        <a href="#" data-url="{{ settings.sub_collection_3 }}">
+          <div class="label">Drink 3</div>
+        </a>
+      </div>
+      <div class="subcategory-card">
+        <a href="#" data-url="{{ settings.sub_collection_4 }}">
+          <div class="label">Drink 4</div>
+        </a>
+      </div>
     </div>
-    <div class="subcategory-card">
-      <a href="#" data-url="{{ section.settings.sub_collection_2 }}">
-        <div class="label">Drink 2</div>
-      </a>
-    </div>
-    <div class="subcategory-card">
-      <a href="#" data-url="{{ section.settings.sub_collection_3 }}">
-        <div class="label">Drink 3</div>
-      </a>
-    </div>
-    <div class="subcategory-card">
-      <a href="#" data-url="{{ section.settings.sub_collection_4 }}">
-        <div class="label">Drink 4</div>
-      </a>
-    </div>
-  </div>
+  {% endif %}
   
   <!-- Product Listings -->
-  <div class="product-listings"></div>
+  <div class="product-listings">
+    {% if collection.title != 'Beverages' %}
+      {% for product in collection.products %}
+        <div class="product-card">
+          <a href="/products/{{ product.handle }}">
+            <img src="{{ product.images[0].src }}" alt="{{ product.title }}">
+            <div class="product-title">{{ product.title }}</div>
+            <div class="product-price">From {{ product.price | money }}</div>
+            {% unless product.available %}
+              <div class="sold-out">SOLD OUT</div>
+            {% endunless %}
+          </a>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
 </div>
+{% javascript %}
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.category-button');
@@ -112,29 +130,11 @@
     const productListings = document.querySelector('.product-listings');
     const subcategoryLinks = document.querySelectorAll('.subcategory-card a');
 
-    function fetchAndDisplayProducts(url) {
-      fetch(url + '.json')
-        .then(response => response.json())
-        .then(data => {
-          const products = data.products;
-          productListings.innerHTML = products.map(product => `
-            <div class="product-card">
-              <a href="/products/${product.handle}">
-                <img src="${product.images[0].src}" alt="${product.title}">
-                <div class="product-title">${product.title}</div>
-                <div class="product-price">From ${Shopify.formatMoney(product.variants[0].price)}</div>
-                ${product.available ? '' : '<div class="sold-out">SOLD OUT</div>'}
-              </a>
-            </div>
-          `).join('');
-        });
-    }
-
     function handleButtonClick(event) {
       const url = event.currentTarget.getAttribute('data-url');
-      fetchAndDisplayProducts(url);
       if (event.currentTarget.textContent === 'Beverages') {
         subcategoryCards.style.display = 'flex';
+        productListings.innerHTML = ''; // Clear product listings when switching to 'Beverages' category
       } else {
         subcategoryCards.style.display = 'none';
       }
@@ -149,16 +149,17 @@
       link.addEventListener('click', function(event) {
         event.preventDefault();
         const url = this.getAttribute('data-url');
-        fetchAndDisplayProducts(url);
         history.pushState(null, '', url);
       });
     });
 
     // Initial load based on the current collection
-    const initialUrl = "{{ collection.url }}";
-    fetchAndDisplayProducts(initialUrl);
+    const initialUrl = "{{ settings.all_products_collection }}";
+    history.replaceState(null, '', initialUrl); // Replace initial state instead of pushing
   });
 </script>
+{% endjavascript %}
+
 
 {% schema %}
 {
