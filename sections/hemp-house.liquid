@@ -64,6 +64,8 @@
   }
 </style>
 {% endstylesheet %}
+
+
 <div class="collection-sub-categories">
   <!-- Breadcrumb Navigation -->
   <div class="breadcrumb">{{ 'Home' | link_to: '/' }} / {{ 'Collections' | link_to: '/collections' }} / {{ collection.title }}</div>
@@ -79,52 +81,32 @@
   </div>
   
   <!-- Subcategory Cards (Initially hidden) -->
-  {% if collection.title == 'Beverages' %}
-    <div class="subcategory-cards">
-      <div class="subcategory-card">
-        <a href="#" data-url="{{ section.settings.sub_collection_1 }}">
-          <div class="label">Drink 1</div>
-        </a>
-      </div>
-      <div class="subcategory-card">
-        <a href="#" data-url="{{ section.settings.sub_collection_2 }}">
-          <div class="label">Drink 2</div>
-        </a>
-      </div>
-      <div class="subcategory-card">
-        <a href="#" data-url="{{ section.settings.sub_collection_3 }}">
-          <div class="label">Drink 3</div>
-        </a>
-      </div>
-      <div class="subcategory-card">
-        <a href="#" data-url="{{ section.settings.sub_collection_4 }}">
-          <div class="label">Drink 4</div>
-        </a>
-      </div>
+  <div class="subcategory-cards" style="display: none;">
+    <div class="subcategory-card">
+      <a href="#" data-url="{{ section.settings.sub_collection_1 }}">
+        <div class="label">Drink 1</div>
+      </a>
     </div>
-  {% endif %}
+    <div class="subcategory-card">
+      <a href="#" data-url="{{ section.settings.sub_collection_2 }}">
+        <div class="label">Drink 2</div>
+      </a>
+    </div>
+    <div class="subcategory-card">
+      <a href="#" data-url="{{ section.settings.sub_collection_3 }}">
+        <div class="label">Drink 3</div>
+      </a>
+    </div>
+    <div class="subcategory-card">
+      <a href="#" data-url="{{ section.settings.sub_collection_4 }}">
+        <div class="label">Drink 4</div>
+      </a>
+    </div>
+  </div>
   
   <!-- Product Listings -->
-  <div class="product-listings">
-    {% if collection.title != 'Beverages' %}
-      {% for product in collection.products %}
-        <div class="product-card">
-          <a href="/products/{{ product.handle }}">
-            <img src="{{ product.images[0].src }}" alt="{{ product.title }}">
-            <div class="product-title">{{ product.title }}</div>
-            <div class="product-price">From {{ product.price | money }}</div>
-            {% unless product.available %}
-              <div class="sold-out">SOLD OUT</div>
-            {% endunless %}
-          </a>
-        </div>
-      {% endfor %}
-    {% endif %}
-  </div>
-   <!-- Product Listings -->
   <div class="product-listings"></div>
 </div>
-{% javascript %}
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.category-button');
@@ -132,19 +114,31 @@
     const productListings = document.querySelector('.product-listings');
     const subcategoryLinks = document.querySelectorAll('.subcategory-card a');
 
+    function fetchAndDisplayProducts(url) {
+      fetch(url + '.json')
+        .then(response => response.json())
+        .then(data => {
+          const products = data.products;
+          productListings.innerHTML = products.map(product => `
+            <div class="product-card">
+              <a href="/products/${product.handle}">
+                <img src="${product.images[0].src}" alt="${product.title}">
+                <div class="product-title">${product.title}</div>
+                <div class="product-price">From ${Shopify.formatMoney(product.variants[0].price)}</div>
+                ${product.available ? '' : '<div class="sold-out">SOLD OUT</div>'}
+              </a>
+            </div>
+          `).join('');
+        });
+    }
+
     function handleButtonClick(event) {
       const url = event.currentTarget.getAttribute('data-url');
-      if (event.currentTarget.textContent === 'Beverages' && subcategoryCards) {
-        setTimeout(function() {
-          subcategoryCards.style.display = 'flex';
-        }, 3000); // 3-second delay
-        if (productListings) setTimeout(function() {
-          productListings.innerHTML = ''; // Clear product listings when switching to 'Beverages' category
-        }, 3000); // 3-second delay
-      } else if (subcategoryCards) {
-        setTimeout(function() {
-          subcategoryCards.style.display = 'none';
-        }, 3000); // 3-second delay
+      fetchAndDisplayProducts(url);
+      if (event.currentTarget.textContent === 'Beverages') {
+        subcategoryCards.style.display = 'flex';
+      } else {
+        subcategoryCards.style.display = 'none';
       }
       history.pushState(null, '', url);
     }
@@ -157,17 +151,16 @@
       link.addEventListener('click', function(event) {
         event.preventDefault();
         const url = this.getAttribute('data-url');
+        fetchAndDisplayProducts(url);
         history.pushState(null, '', url);
       });
     });
 
     // Initial load based on the current collection
-    const initialUrl = "{{ settings.all_products_collection }}";
-    history.replaceState(null, '', initialUrl); // Replace initial state instead of pushing
+    const initialUrl = "{{ collection.url }}";
+    fetchAndDisplayProducts(initialUrl);
   });
 </script>
-{% endjavascript %}
-
 
 {% schema %}
 {
