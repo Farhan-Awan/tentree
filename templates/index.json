@@ -77,7 +77,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40969_2.png",
             "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "linkshop": "shopify:\/\/collections",
+            "linkshop": "shopify:\/\/collections\/new-arrivals",
             "shoptext": "Shop category"
           }
         },
@@ -86,7 +86,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_40969_3.png",
             "col_name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "linkshop": "shopify:\/\/collections",
+            "linkshop": "shopify:\/\/collections\/rings",
             "shoptext": "Shop category"
           }
         }
